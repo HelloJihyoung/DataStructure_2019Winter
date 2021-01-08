@@ -51,5 +51,5 @@ def solution(prices):
     return answer
 
 
-# prices = [3,2,1,1,2,1]
-# print(solution(prices))
+prices = [4,3,2,1,2,3]
+print(solution(prices))
