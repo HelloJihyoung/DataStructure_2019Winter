@@ -1,17 +1,18 @@
 def solution(brown, yellow):
     answer = []
     decimal = []
-    decimal_back =[]
+    #decimal_back =[]
     
     
     for i in range(1, int(yellow**(1/2)) + 1): 
         if yellow % i == 0:
             decimal.append(i)
             if (i != (yellow // i)): 
-                decimal_back.append(yellow//i)
+                #decimal_back.append(yellow//i)
+                decimal.append(yellow//i)
 
-    decimal = (decimal + decimal_back[::-1])[::-1]
-
+    #decimal = (decimal + decimal_back[::-1])[::-1]
+    decimal.sort
 
     for i in range(len(decimal)):
 
@@ -23,10 +24,3 @@ def solution(brown, yellow):
             break
 
     return answer
-
-
-
-brown = 24
-yellow = 24
-
-print(solution(brown, yellow))
