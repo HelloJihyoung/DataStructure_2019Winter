@@ -1,4 +1,5 @@
-# def solution(clothes):
+#  첫번째 시도 : 단순 배열 사용 -> for문 너무 많이써서 효율성이 떨어진다!
+#  def solution(clothes):
 #     answer = 0
 #     clothes_sort = []
     
@@ -20,7 +21,7 @@
       
 #     return answer - 1
 
-
+# 두번째 시도 : 딕셔너리 이용 (문제에서 주어진대로 hash를 이용함! 효율이 훨씬 좋아졌고 코드도 보기 좋아짐)
 def solution(clothes):
 
     clothes_info = dict()
