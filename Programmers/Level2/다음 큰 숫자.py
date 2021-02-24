@@ -8,7 +8,5 @@ def solution(n):
             return nextBig
         nextBig += 1
 
-
 n = 78
 print(solution(n))
-
