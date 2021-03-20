@@ -1,7 +1,11 @@
 def solution(s):
     intHalf = int(len(s)/2)
+    #print(len(s)//2)
+
+    # 짝수일 경우
     if len(s):
         return s[intHalf-1]+s[intHalf]
+    # 홀수일 경우
     else:
         return s[intHalf]
         
